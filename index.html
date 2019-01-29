@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sport Giphy Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body id="wholeThing">
+
+    <div class="jumbotron" id="header">
+        <h1>Sports Gifs!</h1>
+        <h4>Click the buttons to display GIPHYs of your favorite teams<br>Click the GIPHYs to pause and play<br>Search
+            to add more buttons!</h4>
+    </div>
+
+    <form class="form-inline" id="sportSearch">
+        <div class="form-group">
+            <label for="sportInput">Search for a team</label>
+            <input type="text" id="sportInput">
+            <input id="addSport" type="submit" value="submit">
+        </div>
+        
+    </form>
+    <br>
+
+    <div class="row">
+        <div class="container">
+            <div class="btn-group inline pull-left">
+                <button class="btn btn-primary" id="sport" data-search="Huskers">Huskers</button>
+                <button class="btn btn-primary" id="sport" data-search="Wizards">Wizards</button>
+                <button class="btn btn-primary" id="sport" data-search="St. Louis Cardinals">Cardinals</button>
+                <button class="btn btn-primary" id="sport" data-search="St. Louis Blues">Blues</button>
+
+                <div id="myButtons"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="container">
+            <span>
+                <div id="gifArea"></div>
+            </span>
+        </div>
+        
+    </div> 
+
+
+    <script type="text/javascript" src="assets/js.js"> </script>
+</body>
+
+</html>
